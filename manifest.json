@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Effin Compass",
+  "version": "1.0",
+  "description": "Let me tell you what I really think about cardinal directions.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
